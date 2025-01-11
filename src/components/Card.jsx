@@ -4,7 +4,9 @@ export default function Card(props) {
   const [imgPoke, setImgPoke] = useState("")
 	const[pokeType, setPokeType] = useState([])
 	const[pokeName, setPokeName] = useState("")
-	function getPokemon() {
+
+	
+	useEffect(() => {
 		const requestOptions = {
 			method: "GET",
 			redirect: "follow"
@@ -18,11 +20,7 @@ export default function Card(props) {
 				setPokeType(result.types)
 			})
 			.catch((error) => console.error(error));
-	}
-	useEffect(() => {
-		getPokemon();
-		
-	}, []);
+	}, [props.randomNumber]);
 	return (
 		<div className="card" style={{ width: "18rem" }}>
 			<img src={imgPoke} className="card-img-top" alt="ditto" />
