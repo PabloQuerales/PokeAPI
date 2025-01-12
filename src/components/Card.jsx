@@ -23,8 +23,8 @@ export default function Card(props) {
 
 	return (
 		<div className="card" style={{ width: "18rem" }}>
-			<img src={imgPoke} className="card-img-top" alt="ditto" />
-			<div className="card-body d-flex justify-content-center flex-column align-items-center border-top">
+			<img src={imgPoke} className="card-img-top" alt={pokeName} />
+			<div className="card-body d-flex justify-content-center flex-column align-items-center">
 				<h2 className="card-text">{pokeName}</h2>
 				<div className="d-flex gap-5">
 					{pokeType.map((types) => {

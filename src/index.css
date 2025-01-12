@@ -1,13 +1,23 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	background: #ed213a; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #93291e, #ed213a); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #93291e, #ed213a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	height: 97vh;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card {
+	border: 3px solid black;
+	box-shadow: -4px 4px 10px 0px rgba(0, 0, 0, 1);
+}
+.card-img-top {
+	border-bottom: 3px solid black;
+}
+.card-body {
+	background-color: #bc8332b1;
+}
+img {
+	width: 200px;
+	height: 300px;
+}
+h1 {
+	color: aliceblue;
 }

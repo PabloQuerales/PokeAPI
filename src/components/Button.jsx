@@ -6,6 +6,6 @@ export default function Button(props){
     props.setRandomNumber(Math.floor(Math.random() * 151 + 1))
   }
   return(
-    <button className="button" onClick={handleClick}>POKEMON ALEATORIO</button>
+    <button className="btn btn-light p-3 px-5" onClick={handleClick}>POKEMON ALEATORIO</button>
   )
 }
